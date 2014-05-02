@@ -1,0 +1,1 @@
+$(document).ready(function(){function e(){$(results).write(n[0],t[0])}var n=["hearts","spade","club","diamond"],t=["A","1","2","3","4","5","6","7","8","9","10","J","Q","K"]});
