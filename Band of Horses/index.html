@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Band of Horses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link href="css/codiqa.ext.min.css" rel="stylesheet">
+    <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+    <link href="css/jquery-mobile.css" rel="stylesheet">
+    <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.1.min.js"></script>
+    <script src="js/codiqa.ext.min.js"></script>
+    <script src="js/band-of-horses.js"></script>
+    <script type="text/javascript" src="http://www.bandsintown.com/javascripts/bit_widget.js">
+    </script>
+</head>
+
+<body>
+    <div data-role="page" data-control-title="Home" id="page1">
+        <div data-theme="a" data-role="header">
+            <h3 class="header">
+              Band of Horses
+          </h3>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-divider-theme="d" data-inset="false" class="albums">
+                <li data-role="list-divider" role="heading">
+                    Albums
+                </li>
+                <li data-theme="c">
+                    <img src="img/packshot.jpg">Acoustic at the Ryman<span class="ui-li-count">2014</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/iTunes_london.170x170-75.jpg">iTunes Festival: London<span class="ui-li-count">2012</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/miragerock-800x800.jpg">Mirage Rock<span class="ui-li-count">2012</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/knock-knock.jpg">Knock Knock (single)<span class="ui-li-count">2012</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/Georgia++Dilly+Digital+45.jpg">Georgia/Dilly
+                    <span class="ui-li-count">2010</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/infinite-arms-800x800.jpg">Infinite Arms<span class="ui-li-count">2010</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/Laredo.jpg">Laredo (single)<span class="ui-li-count">2010</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/ceasetobegin-800x800.jpg">Cease to Begin<span class="ui-li-count">2007</span>
+                </li>
+                <li data-theme="c">
+                    <img src="img/everythingallthetime-800x800.jpg">Everything All the Time<span class="ui-li-count">2006</span>
+                </li>
+            </ul>
+        </div>
+        <div data-role="tabbar" data-iconpos="top" data-theme="a">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                      One
+                  </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                      Two
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" data-control-title="Tours" id="page2">
+        <div data-theme="a" data-role="header">
+            <h3 class="header">
+              Band of Horses
+          </h3>
+
+        </div>
+        <ul data-role="listview" data-divider-theme="d" data-inset="false" class="tours">
+            <li data-role="list-divider" role="heading">
+                Tour Schedule
+            </li>
+        </ul>
+        <div data-role="content">
+            <div data-controltype="htmlblock">
+                <a href="http://www.bandsintown.com" class="bit-widget-initializer" data-artist="Band of Horses" data-force-narrow-layout="true" data-display-limit="3">
+                  Bandsintown
+              </a>
+            </div>
+        </div>
+        <div data-role="tabbar" data-iconpos="top" data-theme="a">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                      One
+                  </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                      Two
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
