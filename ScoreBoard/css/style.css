@@ -1,0 +1,79 @@
+/***********************************
+GENERAL
+************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+
+
+/***********************************
+NAVIGATION
+************************************/
+.main_nav {
+    position: fixed;
+    width: 100%;
+    vertical-align: middle;
+    font-size: 1.em;
+    background-color: #252525;
+    top: 0;
+    color: snow;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    font-weight: 800;
+    margin: 0 0;
+    padding: 8px 8px;
+}
+
+
+
+/***********************************
+HEADING
+************************************/
+.header {
+    float: left;
+    background-color: #444;
+/*
+    background-image: url(../img/swinging_rings.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+*/
+    margin-top: 30px;   
+    color: #fff;
+    padding: 5px 0 0px 0;
+    width: 100%;
+}
+#page_title {
+    text-align: left;
+    margin: 10px 10%;
+}
+#the {
+    font-size: 2em;
+}
+h1 {
+    font-family: 'Changa One', sans-serif;
+    margin: px 0;
+    font-size: 2.8em;
+    font-weight: normal;
+    line-height: 0.8em;
+}
+
+h2 {
+    font-size: 1.15em;
+    margin: 5px 0 0;
+    font-weight: normal;
+}
+
+
+
+/***********************************
+IMAGES
+************************************/
+img {
+
+}
