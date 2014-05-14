@@ -16,7 +16,6 @@ This site currently consists of this index page and the following milestone 1 fe
 6) Started a form in the last section - index.html
 -->
 <link rel="stylesheet" href="css/style.css">
-<script src="js/sb.js"></script>
 </head>
 
 <body>
@@ -30,38 +29,40 @@ This site currently consists of this index page and the following milestone 1 fe
         </ul>
     </nav>
     <header class="header">
-<!--        <img src="img/swinging_rings.jpg" alt="man swinging from gym rings">-->
         <div id="page_title">
             <h1 id="the">The</h1>
             <h1>SCOREBOARD</h1>
             <h2>The Ultimate Tool to Measure Your Fitness</h2>
         </div>
     </header>
-    <div id="wrapper">
-        <section>
+    
+    
+        <div id="background-photo">
+            <img id="chalkman" src="img/gym_chalk.jpg" alt="man chalking up in the gym">
+        </div>
+    <section class="wrapper">
+        <div class="content">
             <h2>What is Scoreboard?</h2>
-            <p>Scoreboard is your measure of fitness measured against your friends and the world. Ever want to know how you measure up? </p>
-            <img src="img/gym_bars.jpg" alt="Gym bars with weights">
-        </section>
-        <section>
+            <p>Scoreboard is your measure of fitness measured against your friends and the world. Want to know how you measure up? </p>
             <h2>How it works</h2>
-            <P>You log your workouts and exercises and Scoreboard does the rest. We keep track of your personal records and show you how much stronger you are than your friends, and where you stand against the world! </p>
-            <form></form>
-            <img src="img/gym_chalk.jpg" alt="chalking up in the gym">
-        </section>
-        <section>
-            <h2>Go ahead. See where you stand. I dare you.</h2>
-            <form>
-                Max 1 rep bench press:<input type="number"><br>
-                Max push-ups:<input type="number"><br>
-                <input type="radio" name="sex" value="male">Male
-                <input type="radio" name="sex" value="female">Female
-            </form>
-        </section>
-    </div>
+            <p>You log your workouts and exercises and Scoreboard does the rest. We keep track of your personal records and show you how much stronger you are than your friends, and where you stand against the world! </p>
+        </div>
+        
+    </section>
+    <form class="shadow">
+        <h2>Where do you stand?</h2>
+        
+            Max 1 rep bench press:<br>
+            <input type="number"><br>
+            Max push-ups:<br>
+            <input type="number"><br>
+            <input type="radio" name="sex" value="male">Male
+            <input type="radio" name="sex" value="female">Female<br>
+            <input type="submit">
+     </form>
     <footer>
         <p>Copyright 2014 &copy;</p>
     </footer>
+    <script src="js/sb.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href=""><script src=""></script>

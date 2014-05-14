@@ -8,7 +8,16 @@ GENERAL
 img {
     max-width: 100%;
 }
-
+.shadow {
+  -moz-box-shadow:    0 10px 15px 0px black;
+  -webkit-box-shadow: 0 10px 15px 0px black;
+  box-shadow: 0 10px 15px 0px black;
+}
+p {
+    padding: 60 60;
+    background-color: white;
+    color: black;
+}
 
 /***********************************
 NAVIGATION
@@ -22,6 +31,7 @@ NAVIGATION
     top: 0;
     color: snow;
     text-align: center;
+    z-index: 40;
 }
 nav li {
     display: inline-block;
@@ -37,13 +47,9 @@ HEADING
 ************************************/
 .header {
     float: left;
-    background-color: #444;
-/*
-    background-image: url(../img/swinging_rings.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-*/
-    margin-top: 30px;   
+    background-color: rgba(68, 68, 68, 0.4);
+    position: relative;
+    margin-top: 12px;   
     color: #fff;
     padding: 5px 0 0px 0;
     width: 100%;
@@ -54,6 +60,8 @@ HEADING
 }
 #the {
     font-size: 2em;
+    position: relative;
+    top: 2px;
 }
 h1 {
     font-family: 'Changa One', sans-serif;
@@ -68,12 +76,73 @@ h2 {
     margin: 5px 0 0;
     font-weight: normal;
 }
+/***********************************
+BODY
+************************************/
+
+/*background photo not finished*/
+#background-photo {
+    background: black;
+    width: 100%;
+    height: 80%;
+    z-index: -5;
+    position: fixed;
+    top: 30px;
+}
+#chalkman {
+    width: 100%;
+}
+.wrapper {
+    position: absolute;
+    top: 440px;
+    width: 100%;
+    background-color: white;
+    height: 30%;
+    z-index: 20;
+}
+.content {
+    margin: 20px 240px 0 10vw;
+    max-width: 640px;
+    min-width: 260px;
+    
+}
 
 
 
 /***********************************
+FORM
+************************************/
+form {
+    position: fixed;
+    padding: 10px;
+    background-color: rgba(238, 238, 238, 0.35);
+    right: 0;
+    top: 160px;
+    z-index: 30;
+}
+form *{
+    padding:2px;
+    font-weight: 600;
+}
+input {
+    background-color: white;
+}
+
+/***********************************
 IMAGES
 ************************************/
-img {
 
+/***********************************
+FOOTER
+************************************/
+
+footer p{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    z-index: 50;
 }
