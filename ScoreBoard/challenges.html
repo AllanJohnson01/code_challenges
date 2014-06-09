@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard | Challenges</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Play:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fitApp.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+  </head>
+
+<body>
+        <nav class="main_nav">
+        <ul>
+            <a href="index.html">
+            <li>Home</li>
+            </a>
+            <a href="challenges.html">
+            <li>Challenges</li>
+            </a>
+            <li>Log</li>
+            <a href="about.html">
+            <li>About</li>
+            </a>
+        </ul>
+        
+    </nav>
+    
+    
+    
+<!--
+        <div id="background-photo">
+            <img id="background" src="img/gym_chalk.jpg" alt="man chalking up in the gym">
+        </div>
+-->
+    <div class="row results" id="challenges-page">
+        <div class="large-12 columns ">
+            <div class="row">
+                <div class="large-9 columns">
+                    <p> Search Results for "body weight"</p>
+                </div>
+                <div class=" large-3 columns ">
+                    <select name="sortOptions">
+                        <option value="sortby">Sort By</option>
+                        <optgroup label="Fitness Types">
+                            <option value="muscle strength">Muscle Strength</option>
+                            <option value="muscle endurance">Muscle Endurance</option>
+                            <option value="cardio">Cardio</option>
+                            <option value="flexibility">Flexibility</option>
+                        <optgroup label="Body Composition">
+                            <option value="mass">Mass</option>
+                            <option value="lean">Lean</option>
+                        <optgroup label="Skills">
+                            <option value="agility">Agility</option>
+                            <option value="speed">Speed</option>
+                            <option value="power">Power</option>
+                            <option value="balance">Balance</option>
+                            <option value="coordination">Coordination</option>
+                            <option value="reaction time">Reaction Time</option>
+                        <optgroup label="Muscle Groups">
+                            <option value="upper body">Upper Body</option>
+                            <option value="lower body">Lower Body</option>
+                            <option value="core">Core</option>
+                            <option value="arms">Arms</option>
+                        <optgroup label="By equiptment type">
+                            <option value="body weight">Body Weight</option>
+                            <option value="crossFit gym">CrossFit Gym</option>
+                            <option value="olympic">Olympic</option>
+                    </select>
+                </div>
+            </div>
+<!--Start of fitness activity-->
+            <hr>
+            <div class="search-results">
+                <div class="row ">
+                    <div class="large-2 columns">
+                        <a href="#"> <span> </span><img src="http://placehold.it/150x200&text=Push Ups Logo" alt="push-up logo" class=" thumbnail"></a>
+                    </div>
+                    <div class="large-10 columns">
+                        <div class="row">
+                            <div class=" large-9 columns">
+                                <h5>Push-Ups</h5>
+                                <div class="row">
+                                    <ul class="large-block-grid-2">
+                                        <li><h6>Fitness benefits:</h6>
+                                        <ul>
+                                            <li><strong>Muscle Strength: </strong>3/10</li>
+                                            <li><strong>Muscle Endurance: </strong>10/10</li>
+                                            <li><strong>Cardio/Vascular: </strong> 1/10</li>
+                                            <li><strong>Flexibility: </strong> 0/10</li>
+                                        </ul>
+                                        </li>
+                                        <li><h6>Skill benefits:</h6>
+                                        <ul>
+                                            <li><strong>Agility: </strong> 0/10</li>
+                                            <li><strong>Speed: </strong> 6/10</li>
+                                            <li><strong>Power: </strong> 4/10</li>
+                                            <li><strong>Balance: </strong> 1/10</li>
+                                            <li><strong>Coordination: </strong> 1/10</li>
+                                            <li><strong>Reaction Time: </strong> 1/10</li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                
+                            </div>
+                            </div>
+                            <div class="large-3 columns">
+                                <form id="pushUps">
+                                    <input type="number" id="pushUps-reps" placeholder="reps:">
+                                    <button type="button" class="button  expand medium" value="log it" id="log-pushUps" ><span>Log it!</span></button>
+                                    <button type="button" class="button  expand medium" id="goal-pushUps"><span>Add to Goals</span></button> 
+                                </form>
+                                <div>
+                                    <p ><strong>Your Record: </strong><span class="red" id="pushUps-record">0</span> reps</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+<!--End of fitness activity-->
+
+            <a href="#" class="button right"> show more results &raquo;</a>
+        </div>
+    </div>
+    <script src="js/sb.js"></script>
+    <script src="js/exercises.js"></script>
+</body>
+</html>

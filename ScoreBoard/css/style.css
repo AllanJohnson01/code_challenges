@@ -4,6 +4,7 @@ GENERAL
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 img {
     max-width: 100%;
@@ -18,26 +19,42 @@ p {
     background-color: white;
     color: black;
 }
-
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+#challenges-page {
+    margin-top: 100px;
+}
 /***********************************
 NAVIGATION
 ************************************/
+nav {
+        background-color: hsl(219, 17%, 18%);
+}
 .main_nav {
     position: fixed;
-    width: 100%;
     vertical-align: middle;
-    font-size: 1.em;
-    background-color: #252525;
+    width: 100%;
     top: 0;
-    color: snow;
     text-align: center;
     z-index: 40;
+}
+.login-nav {
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    vertical-align: middle;
+    text-align: right;
+    z-index: 41;
 }
 nav li {
     display: inline-block;
     font-weight: 800;
     margin: 0 0;
     padding: 8px 8px;
+    color: snow;
 }
 
 
@@ -47,9 +64,9 @@ HEADING
 ************************************/
 .header {
     float: left;
-    background-color: rgba(68, 68, 68, 0.4);
-    position: relative;
-    margin-top: 12px;   
+    background-color: hsla(219, 17%, 18%, 0);
+    position: fixed;
+    margin-top: 29px;   
     color: #fff;
     padding: 5px 0 0px 0;
     width: 100%;
@@ -89,42 +106,92 @@ BODY
     position: fixed;
     top: 30px;
 }
-#chalkman {
+#background {
     width: 100%;
 }
 .wrapper {
-    position: absolute;
-    top: 440px;
+    position: relative;
+    top: 85vh;
     width: 100%;
     background-color: white;
-    height: 30%;
     z-index: 20;
 }
 .content {
-    margin: 20px 240px 0 10vw;
+    margin: auto;
+    padding: 10% 7%;
     max-width: 640px;
     min-width: 260px;
     
 }
+.content h2 {
+    font-family: 'Play', sans-serif;
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 2em;
+    color: hsl(219, 17%, 18%);
+}
+.content p {
+    padding-bottom: 10px;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.5em;
+}
+.tftable {
+    margin: 140px auto;
+    top: 140px;
+    max-width: 540px;
+    font-size: 14px;
+    color:#fff;
+    width:100%;
+    border-width: 1px;
+    border-color: hsl(111, 56%, 62%);
+    border-collapse: collapse;
+}
 
+.tftable th {
+    font-size: 12px;
+    background-color: hsl(111, 56%, 62%);
+    color: #fff;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #9dcc7a;
+    text-align: center;
+}
+.tftable tr {
+    background-color:rgba(255, 255, 255, 0);
+}
+.tftable td {
+    font-size:12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #9dcc7a;
+}
+.head-title {
+    font-size: 2em;
+}
 
 
 /***********************************
 FORM
 ************************************/
-form {
+#start-form {
     position: fixed;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: rgba(238, 238, 238, 0.35);
-    right: 0;
+    right: 5%;
     top: 160px;
-    z-index: 30;
+    z-index: 15;
+    color: hsl(219, 17%, 18%);
 }
-form *{
+#start-form div {
+    margin: 5px 10px;
+}
+#start-form div *{
     padding:2px;
     font-weight: 600;
 }
-input {
+#start-form input {
     background-color: white;
 }
 
@@ -135,14 +202,69 @@ IMAGES
 /***********************************
 FOOTER
 ************************************/
-
-footer p{
-    position: absolute;
-    bottom: 0px;
+footer{
+    clear: both;
+    position: relative;
+    top: 85vh;
+    padding-top: 8px;
     width: 100%;
-    padding: 10px;
     text-align: center;
-    background-color: gray;
+    background-color: hsl(219, 17%, 18%);
     color: white;
     z-index: 50;
+}
+footer p{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: inherit;
+    color: white;
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+
+/***********************************
+SIGN-UP FORM
+************************************/
+
+
+
+.signup-panel {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 30px;
+}
+.signup-panel i {
+  font-size: 30px;
+  line-height: 50px;
+  color: #999;
+}
+.signup-panel form input, .signup-panel form span {
+  height: 50px;
+}
+.signup-panel .welcome {
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0;
+}
+.signup-panel p {
+  font-size: 13px;
+  font-weight: 200;
+  margin-left: 25%;
+}
+.signup-panel .button {
+  margin-left: 35%;
+}
+#register {
+    background-color: white;
+    position: fixed;
+    margin: auto;
+    z-index: 100;
+    top: 100px;
 }

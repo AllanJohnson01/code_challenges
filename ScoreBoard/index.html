@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <title>Johnson_Allan_MIS577_10997</title>
 <!--
-Session date: May 05, 2014
-
+***Week 1 Session date: May 05, 2014 ***
 Date milestone submitted: May 11, 2014
 This site currently consists of this index page and the following milestone 1 features:
 1) Global structure tags - index.html
@@ -14,20 +13,77 @@ This site currently consists of this index page and the following milestone 1 fe
 4) First page named index.html
 5) The title of the fist page in the format of - header, index.html LastName_FirstName_MIS577_Section
 6) Started a form in the last section - index.html
+
+*** Week 2 Session date: May 05, 2014 ***
+Submittion date: May 18, 2014
+Milestone features:
+1) Added CSS throughout index.html
+2) Added the get started form on the splash page- index.html
+3) Added links in the nav (to the dashboard page) and footer to (social sites)
+4) included multiple images in the footer and background of index.html
+5) created a table on dashboard.html
+6) Updated this header. 
+
+*** Week 3 Session date: May 18, 2014 ***
+Submittion date: May 25, 2014
+Milestone features:
+1) More CSS-- Throughout
+2) Added login links-- index.html
+3) Used the JavaScript prompt function on the register and login links on the home page to prompt the user to enter their username-- index.html
+4) Used JavaScript alert function on the get started form and created a score variable to return the score to the user when they enter their data-- index.html
+5) Added fitness components paragraphs-- dashboard.html
+6) Updated this header. 
+
+*** Week 4 Session date: May 25, 2014 ***
+Submittion date: June 01, 2014
+Milestone features:
+1) Discovered the benefits of Foundation from Zurb. I used their framework to develop my challanges page
+2) added the format for my exercises. Hopefully I will learn how to load them dynamically from the server in the future. 
+3) I created a constructor object for my exercises in sb.js with properties and attributes. 
+4) I tried many times to use a for loop to enumerate through the property values of my pushUps object (in the Exercises class), but couldn't figure out why it wouldn't work when I would press the "log it" button on challenges.html
+5) I added the most simple for loop at the bottom of challenges.html which just logs a message to the console upon pressing the goals button. It didn't really demonstrate anything other than I may not have lost my sanity. Wait I just uploaded it to my server and it appears that my logic was working. I don't know why it would work when I ran it locally. I don't know how developers maintain their sanity.
+6) Updated this header.
+
+*** Week 5 Session date: June 01, 2014 ***
+Submittion date: June 08, 2014
+Milestone features:
+1) Added a new login/register form- index.html
+2) Added some JavaScript to show the hidden form upon pressing the register button- index.html/sb.js
+3) Added setCookie(), getCookie(), and checkCookie()- sb.js
+4) Used the date method in setCookie()- sb.js
+5) Updated this header.
+
 -->
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Play:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/fitApp.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
     <nav class="main_nav">
         <ul>
             <li>Home</li>
-            <li>Goals</li>
+            <a href="challenges.html">
             <li>Challenges</li>
+            </a>
             <li>Log</li>
-            <li>Profile</li>
+            <a href="about.html">
+            <li>About</li>
+            </a>
         </ul>
+        <nav class="login-nav">
+        <ul>
+            <li id="login">Register/Login</li>
+
+        </ul>
+    
     </nav>
+    </nav>
+    
     <header class="header">
         <div id="page_title">
             <h1 id="the">The</h1>
@@ -38,31 +94,81 @@ This site currently consists of this index page and the following milestone 1 fe
     
     
         <div id="background-photo">
-            <img id="chalkman" src="img/gym_chalk.jpg" alt="man chalking up in the gym">
+            <img id="background" src="img/gym_chalk.jpg" alt="man chalking up in the gym">
         </div>
     <section class="wrapper">
         <div class="content">
             <h2>What is Scoreboard?</h2>
             <p>Scoreboard is your measure of fitness measured against your friends and the world. Want to know how you measure up? </p>
             <h2>How it works</h2>
-            <p>You log your workouts and exercises and Scoreboard does the rest. We keep track of your personal records and show you how much stronger you are than your friends, and where you stand against the world! </p>
+            <p>Easier than burpees, that's for sure. Simply log your workouts and exercises and Scoreboard does the rest. As soon as you enter your workout you will see how you stack up against your friends, your city, and the world! </p>
         </div>
         
     </section>
-    <form class="shadow">
-        <h2>Where do you stand?</h2>
-        
+    <form id="start-form" class="shadow">
+        <div>
+            <h2>Where do you stand?</h2>
+
             Max 1 rep bench press:<br>
-            <input type="number"><br>
+            <input id="bench-press" type="number">lbs<br>
             Max push-ups:<br>
-            <input type="number"><br>
+            <input id="push-ups" type="number">reps<br>
             <input type="radio" name="sex" value="male">Male
             <input type="radio" name="sex" value="female">Female<br>
-            <input type="submit">
+            <input type="submit" value="Score Me">
+        </div>
      </form>
+        <!--This section is the Register/signup form from foundation's building blocks-->
+     <div class="row">
+        <div class="large-6 columns">
+          <div class="signup-panel" id="register" style="display: none">
+            <p class="welcome"> Welcome to the ScoreBoard!</p>
+            <form id="register-login">
+              <div class="row collapse">
+                <div class="small-2  columns">
+                  <span class="prefix"><i class="fi-torso-female"></i></span>
+                </div>
+                <div class="small-10  columns">
+                  <input type="text" placeholder="username" id="username1">
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="small-2 columns">
+                  <span class="prefix"><i class="fi-mail"></i></span>
+                </div>
+                <div class="small-10  columns">
+                  <input type="text" placeholder="email">
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="small-2 columns ">
+                  <span class="prefix"><i class="fi-lock"></i></span>
+                </div>
+                <div class="small-10 columns ">
+                  <input type="text" placeholder="password">
+                </div>
+              </div>
+                <button class="button" id="submit1" type="button" value="Sign Up!" >Sign Up</button>
+            </form>
+            
+             <p>Already have an account? <a href="#">Login here &raquo</a></p>
+          </div>
+    </div>
+   </div>              
+            
     <footer>
-        <p>Copyright 2014 &copy;</p>
+        <a href="http://twitter.com/AllanJohnson619" target="_blank">
+        <img src="img/icons/twitter%202.png" alt="twitter logo" class="social-icon">
+      </a>
+      <a href="http://facebook.com/Allan.D.Johnson" target="_blank">
+        <img src="img/icons/facebook.png" alt="facebook logo" class="social-icon">
+      </a>
+      <a href="https://www.linkedin.com/pub/allan-johnson/6/199/aa5" target="_blank">
+        <img src="img/icons/linkedin.png" alt="linkedIn logo" class="social-icon">
+      </a>
+      <p>&copy;2014 Allan Johson</p>
     </footer>
     <script src="js/sb.js"></script>
+    <script src="js/exercises.js"></script>
 </body>
 </html>
