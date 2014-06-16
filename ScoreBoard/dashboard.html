@@ -6,11 +6,12 @@
     <title>Scoreboard | Challenges</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
     <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
   </head>
 
-<body>
+<body onload="checkCookie()">
 
  
   <nav class="top-bar" data-topbar>
@@ -18,7 +19,7 @@
        
       <li class="name">
         <h1>
-          <a href="#">
+          <a href="index.html">
             Score Board
           </a>
         </h1>
@@ -74,7 +75,7 @@
  
   <div class="row">
     <div class="large-12 columns">
- 
+        <h1 id="userHeading">Username placeholder</h1>
 
       <div class="row">
         <div class="large-12 columns">
@@ -133,7 +134,8 @@
              
  
             <div id="dailyPic" class="large-4 small-6 columns card" draggable="true">
-              <img src="http://placehold.it/300x465&text=Image">
+                <h4>Pic of the Day</h4><hr>
+              <img src=img/playground_rings.jpg alt="gym rings">
             </div>
 
               

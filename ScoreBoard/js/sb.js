@@ -32,10 +32,10 @@ These additions should be integrated into your site, not standalone features.
 
 function handleDragOver(e) {
   if (e.preventDefault) {
-    e.preventDefault(); // Necessary. Allows us to drop.
+    e.preventDefault(); 
   }
 
-  e.dataTransfer.dropEffect = 'move';
+  //e.dataTransfer.dropEffect = 'move';
 
   return false;
 }
@@ -131,8 +131,11 @@ function getCookie(cname) {
 
 function checkCookie() {
     var user=getCookie("username");
+    var userHeading = document.getElementById("userHeading")
     if (user != "") {
-        alert("Welcome again " + user);
+        userHeading.innerHTML = user + "'s Dashboard";
+        
+        
     }
 }
 $("#submit1").click(function() {
