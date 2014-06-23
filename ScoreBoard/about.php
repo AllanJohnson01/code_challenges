@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <title><?php echo "SB | About"; ?></title>
+<?php include('includes/header.php'); ?>
+    
+    <header class="header">
+        <div id="page_title">
+            <h1 id="the">My</h1>
+            <h1>DASHBOARD</h1>
+            <h2>The Ultimate Tool to Measure Your Fitness</h2>
+        </div>
+    </header>
+        
+    
+        <div id="background-photo">
+<!--            <img id="background" src="img/stacked_weights.jpg" alt="man chalking up in the gym">-->
+
+<table class="tftable" border="1">
+    <thead>
+        <tr>
+            <th class="head-title" colspan="3">Components of Fitness</th>
+        </tr>
+        <tr>
+            <th>Health and Strength</th>
+            <th>Skills</th>
+            <th>Physiological</th>
+        </tr>
+    </thead>
+
+    <tr>
+        <td><a href="#cariovascular-fitness">Cardio/Respiratory Endurace</a></td><td>Agility</td><td>Metabolic State</td>
+    </tr>
+    <tr>
+        <td><a href="#muscle-strength">Muscle Strength</a></td><td>Balance</td><td>bone integrity</td>
+    </tr>
+    <tr>
+        <td>Muscle Endurance</td><td>Coordination</td><td> </td>
+    </tr>
+    <tr>
+        <td>Flexibility</td><td>Speed</td><td> </td></tr>
+    <tr>
+        <td>Body Composition</td><td>Power</td><td> </td>
+    </tr>
+    <tr>
+        <td> </td><td>Reaction Time</td><td> </td>
+    </tr>
+    
+</table>    
+        </div>
+    <section>
+        <div>
+            
+        </div>
+    </section>
+    
+    <section class="wrapper">
+        <h2>What is Fitness</h2>
+        <h3>Health Related Components of Fitness:</h3>
+        <div class="content" id="cardiovascular-fitness">
+            <h3>Cardiovascular Fitness</h3>
+            <p>Cardiovascular fitness is the ability of the body to withstand aerobic activity engaging the large muscle groups for prolong periods of time. It engages the heart, lungs, and vascular system and is often recommended to help prevent coronary artery disease. The National Vital Statistics Report states that heart disease is the leading cause of mortality in the United States with coronary heart disease being the most common condition under the general term. Exercise can help to minimize the risk of coronary heart disease because it can lower cholesterol levels and lower one’s blood pressure.</p>
+        </div>
+        <div class="content" id="muscular-strength">
+            <h3>Muscular Strength</h3>
+            <p>Muscular strength refers to the ability of the muscle to exert force and specifically is demonstrated by exerting one’s maximum force over a short period of time. Exercising muscular strength has been said to improve bone mass, which can aid in the prevention of osteoporosis, to improve glucose tolerance, which can aid in the prevention of Type 2 Diabetes, and to improve musculotendinous integrity, which can prevent injury. It also plays a role in increasing levels of fat free mass and ones resting metabolic rate, which can aid in weight management. Lastly, it makes every-day activities easier to carry out, which can lengthen the duration of an individual’s independence.</p>
+        </div>
+        <div class="content" id="muscular-endurance">
+            <h3>Muscular Endurance</h3>
+            <p>Muscular endurance is a muscle’s ability to work continuously against a resistance over a long period of time and is demonstrated by increasing the amount of time the muscle is contracting against a force, not by increasing the resistance of the force.  This is important to work on for posture, withstanding physical activity throughout the day, and for the prevention of injuries since muscles are important in the stability of joints.  Ligaments hold two bones in place at the joints, but muscles reinforce this positioning.  If one’s muscles are subject to fatigue easily, the muscles cannot perform their intended role and the joint is left unstable and can more easily be injured.</p>
+        </div>
+        <div class="content" id="flexibility">
+            <h3>Flexibility</h3>
+            <p>Flexibility is the ability to move a joint through its complete range of motion. It is important to have to improve performance in sports and to prevent injury. Perhaps more importantly, it is also necessary to have flexibility in order to carry out daily tasks such as bending down to tie one’s shoe, or bringing one’s arm behind them to put on their jacket. The longer one maintains flexibility, the longer one can remain independent. However, the only way to maintain flexibility is to keep moving the joints through the largest range of motion one has.</p>
+        </div>
+        <div class="content" id="body-composition">
+            <h3>Body Composition</h3>
+            <p>Body composistion is the proportion of fat to fat free mass in the body. Some fat is necessary to maintain regular function in the body. However, a significant increase in body fat is often related to overeating and inadequate exercise, which has been associated with an increase in blood pressure and blood lipids levels and a decrease in glucose tolerance. Unfortunately, if not controlled, these can eventually lead to life threatening situations such as the development of Heart Disease or Type II Diabetes.</p>
+        </div>
+        <h3>Skill Related Components of Fitness:</h3>
+        <div class="content" id="Agility">
+            <h3>Agility</h3>
+            <p>Agility is defined as an effective and quick coupling of braking, changing directions, and accelerating again while maintaining motor control in either a vertical or horizontal direction. Agility is very complex and requires balance, spatial awareness, and visual processing. It is important to develop in order to improve on one’s neuromuscular control and motor skill function, to prevent injury, and improve performance in sport. This is obviously helpful as an athlete, but we can incorporate these skills into daily life. We may not realize it, but even walking down the city’s crowded streets can sometimes require agility by having to dodge bicycles, cars, and other pedestrians.</p>
+        </div>
+        <div class="content" id="balance">
+            <h3>Balance</h3>
+            <p>Balance is the ability to maintain equilibrium of the body whether one remains in one place or one is in motion. Balance is so important to have to avoid injury, especially as one ages. Poor balance makes one more susceptible to falls no matter what the age. As we do age though, our bodies become less flexible and our bones become weaker resulting in danger of a more serious debilitating injury due to a lack of balance such as a hip fracture.</p>
+        </div>
+        <div class="content" id="coordination">
+            <h3>Coordination</h3>
+            <p>Coordination refers to the ability of an individual to use their senses together with their body to perform tasks smoothly and accurately. It takes coordination to do everything in life, which we may take for granted at times. Buttoning a shirt takes coordination of the fingers. Hopping over a puddle in the street takes coordination of your legs, your posture muscles, and your sense of how far you have to jump. These are things we may have a harder time doing as we age and lose a sense of coordination. That is why it is important to work on it throughout life.</p>
+        </div>
+        <div class="content" id="speed">
+            <h3>Speed</h3>
+            <p>Speed is simply the ability to perform a movement as quickly as possible. Having speed is not a necessity to live out a high quality life, but it certainly is appreciated throughout the day such as when one must run to catch the bus. Speed is unfortunately influenced by the amount of fast twitch muscle fibers that one has. These fibers fire at a quick rate, though they fatigue quickly. If an individual has a higher proportion of these fibers as compared to the slow twitch (slow to react, but have greater endurance) they will be naturally quick. Anyone can nonetheless, improve their speed with technique and muscle training, even if not naturally predisposed to be fast.</p>
+        </div>
+        <div class="content" id="power">
+            <h3>Power</h3>
+            <p>Power relates to explosive force production. It is the measure of the force one can generate at the quickest speed. We may not think of using power much in our every day lives, but it keeps us efficient and swift. It is a result of high neural activity, recruitment and coordination of muscles, and anaerobic metabolism.</p>
+        </div>
+        <div class="content" id="reaction-time">
+            <h3>Reaction Time</h3>
+            <p>Reaction refers to the time it takes for the body to respond after a stimulus has been given. It may not be obvious always, but reaction time is actually very important in daily life. It can determine whether you catch the glass figurine that you bumped into, or if you are too slow and watch it shatter on the floor. As mentioned earlier, it can even determine whether you break in time to avoid a car accident or are seriously injured.</p>
+        </div>
+        <h3>Physiologically Related Components of Fitness:</h3>
+        <div class="content" id="metabolic-state">
+            <h3>Metabolic State</h3>
+            <p>This refers to the composition of one’s blood and what levels of certain substances exists. These values can be used to predict and hopefully prevent serious problems. For example, high blood lipid levels, such as LDL cholesterol means the individual has an increased risk of different diseases of the heart and arteries such as atherosclerosis, heart attack, or stroke. High glucose levels are an indicator of insulin sensitivity or that the body is no longer processing sugars as efficiently as it should. If it is not controlled, this can develop into Type 2 Diabetes.</p>
+        </div>
+        <div class="content" id="bone-integrity">
+            <h3>Bone Integrity</h3>
+            <p>Bone integrity refers to the density of the bones. As children grow, their bones naturally are suppose to grow in length and density. However, after a certain age during adulthood, the bones can start to break down. If bone density reaches dangerously low levels, one has a condition known as osteoporosis. Luckily, high impact and resistance training has been shown to trigger bone growth. It is therefore important to remain active throughout life so that your bones maintain their density and they don’t reach dangerously low levels.</p>
+        </div>
+    </section>
+<!--
+    <form class="shadow">
+        <div>
+            <h2>New Exercise:</h2>
+
+            Max 1 rep bench press:<br>
+            <input type="number">lbs<br>
+            Max push-ups:<br>
+            <input type="number">reps<br>
+            <input type="radio" name="sex" value="male">Male
+            <input type="radio" name="sex" value="female">Female<br>
+            <input type="submit">
+        </div>
+     </form>
+-->
+    <?php include ('includes/footer.php'); ?>

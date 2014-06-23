@@ -1,30 +1,5 @@
 "use strict";
 
-/*For Week 6 of our Web Page Project, each student shall include two features using the DOM. We can discuss these features and how to implement them in the graded threaded discussions.
-1)
-*Finding and highlighting an element (20 points)
-*Creating and inserting elements
-*Replacing and removing elements
-
-2) Use a DOM Collections and/or Styles feature (20 points) .
-Some suggestions are:
-
-*Extract links and display them together at the bottom of the page.
-
-*Change the background-color style property in response to user input.
-
-*Write a script that contains a button and a counter in a div. The button should increment the counter each time that it is clicked.
-
-*Write a script that prints the length of all of the JavaScript collections on a page.
-
-*Create a Web page in which users are allowed to select their favorite layout and formatting through the use of the classname property.
-
-3) Update the header to include Milestone 6 information. (10 points)
-These additions should be integrated into your site, not standalone features.
-*/
-
-// WEEK 6 // 
-
 
 //function handleDragStart(e) {
 //  this.style.opacity = '0.4';  // this / e.target is the source node.
@@ -150,7 +125,7 @@ $("#submit1").click(function() {
 
 
 //This function runs the "try it yourself" form on the home page
-var chestScore = $( "#start-form" ).submit(function( event ) {
+var chestScore = $( "#submit2" ).click(function( event ) {
     var benchScore,
         pushScore;
    benchScore = $("#bench-press").val() * benchPress.muscleStren;

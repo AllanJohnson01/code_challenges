@@ -1,0 +1,21 @@
+.top-bar {
+    position: fixed;  
+/*
+    background-color: rgba(51, 51, 51, 0.21);
+    color: #333333;
+*/
+    width: 100%;
+    z-index: 10;
+}
+ul.right *{
+    background-color: rgba(51, 51, 51, 0    );
+    color: inherit;
+}
+.top-bar .row {
+    max-width: 1000px;
+}
+top-bar 
+#index-pics img {
+    border-radius: 100%;
+    
+}
